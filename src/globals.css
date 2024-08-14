@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    position: relative;
+}
+
+.linha{
+    height: 2px;
+    background-color: rgb(30, 189, 30);
+    position: absolute;
+    bottom: 0;             
+    left: 0;    
+    width: 100%;
+}
+
+li{
+    display: inline;
+}
