@@ -8,6 +8,10 @@ header{
     background-color: rgb(0, 0, 0);
     height: 60px;
     position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .linha{

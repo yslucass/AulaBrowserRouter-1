@@ -1,5 +1,9 @@
+import Header from "../components/Header";
 export default function Produto(){
     return(
-        <h1>Produtos</h1>
+        <div>
+            <Header/>
+         <h1>Produtos</h1>
+        </div>
     );
 }
