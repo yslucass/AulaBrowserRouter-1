@@ -11,8 +11,6 @@ export default function Header(){
             <Link to="/oferta">
                 <li>Ofertas</li>
             </Link>
-            <div className="linha">
-            </div>
         </header>
     );
 }
