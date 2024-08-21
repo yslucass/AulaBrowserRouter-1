@@ -40,3 +40,19 @@ header li:hover {
 li{
     display: inline;
 }
+
+.logo{
+    height: 37px; 
+}
+
+.rosa{
+    color: rgb(255, 112, 167); 
+    display: flex;
+    justify-content: center;
+}
+
+.cinza{
+    color: rgb(128, 128, 128);
+    display: flex;
+    justify-content: center;
+}

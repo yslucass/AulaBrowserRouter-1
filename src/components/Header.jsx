@@ -3,6 +3,9 @@ export default function Header(){
     return(
         <header>
             <Link to="/">
+            <img src="https://assets2.razerzone.com/images/phoenix/razer-ths-logo.svg" alt="Logo" className="logo"/>
+            </Link>
+            <Link to="/">
                 <li>Home</li>
             </Link>
             <Link to="/produto">
