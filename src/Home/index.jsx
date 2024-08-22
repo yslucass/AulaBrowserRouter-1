@@ -5,10 +5,37 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function Home() {
 
-    const [listaProdutos, setProdutos] = useState([
-        {id: 1, nome: 'produto a', preco: 'US$129.99'},
-        {id: 2, nome: 'produto b', preco: 'US$179.00'},
-        {id: 3, nome: 'produto c', preco: 'US$149.99'}
+    const [produtos] = useState([
+        {
+            id: 1,
+            nome: 'Razer Basilisk V3 Pro - Black',
+            preco: 'US$129.99',
+            imagem: "https://assets3.razerzone.com/XianHhS4aWPIr4UJLTatssIfkZI=/300x300/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fha0%2Fhb6%2F9529652445214%2Fbasilisk-v3-pro-black-2-500x500.png"
+        },
+        {
+            id: 2,
+            nome: 'Razer Naga V2 Pro',
+            preco: 'US$179.99',
+            imagem: "https://assets3.razerzone.com/OrGvLdu5Zv02H5kMRLaPiGmhmPg=/300x300/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhb2%2Fhb9%2F9529652379678%2Fnaga-v2-pro-2-500x500.png"
+        },
+        {
+            id: 3,
+            nome: 'Razer DeathAdder V3 Pro - Black - Classic Base - 1000 Hz',
+            preco: 'US$149.99',
+            imagem: "https://assets3.razerzone.com/vjg5qK3y0VjX6fDNGV7PGut0r0c=/300x300/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhc9%2Fh51%2F9449963946014%2Fdeathadder-v3-pro-black-v2-500x500.png"
+        },
+        {
+            id: 4,
+            nome: 'Razer Kraken Kitty V2 BT - Hello Kitty and Friends Edition',
+            preco: 'US$139.99',
+            imagem: "https://assets3.razerzone.com/4bphiLjZ-zcYWv2PkFhISgu4gaw=/300x300/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh25%2Fhc8%2F9796329275422%2Fkraken-kitty-v2-bt-hello-kitty-500x500.png"
+        },
+        {
+            id: 5,
+            nome: 'Razer Kraken V4',
+            preco: 'US$179.99',
+            imagem: "https://assets3.razerzone.com/T92w15ek3fXhe4ZZ2dpPvxb-1XQ=/300x300/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhec%2Fhab%2F9806610333726%2Fkraken-v4-500x500.png"
+        }
     ])
 
     return (
@@ -24,13 +51,13 @@ export default function Home() {
             dynamicHeight
             >
                 <div>
-                  <img src="https://assets2.razerzone.com/images/pnx.assets/9aaa4c7d3671f1b1a5f916f45569205c/intel-gamer-days-2024-homepage-desktop2x.webp"></img>
+                  <img src="https://assets2.razerzone.com/images/pnx.assets/9aaa4c7d3671f1b1a5f916f45569205c/razer-kraken-v4-homepage-desktop2x.webp"></img>
                 </div>
                 <div>
-                    <img src="https://assets2.razerzone.com/images/pnx.assets/3a6dc2c039b79f5aca6990ae15221b35/the-razer-huntsman-v3-pro-line-hero-desktop.webp"></img>
+                    <img src="https://assets2.razerzone.com/images/pnx.assets/9aaa4c7d3671f1b1a5f916f45569205c/intel-gamer-days-2024-homepage-desktop2x.webp"></img>
                 </div>
                 <div>
-                    <img src="https://assets2.razerzone.com/images/pnx.assets/9aaa4c7d3671f1b1a5f916f45569205c/razer-kraken-v4-homepage-desktop2x.webp"></img>
+                    <img src="https://assets2.razerzone.com/images/pnx.assets/19139469bcc62860c37806cc9355cdf1/razer-huntsman-v3-pro-line-homepage-desktop2x.webp"></img>
                 </div>
             </Carousel>
             <br></br>
@@ -40,18 +67,20 @@ export default function Home() {
             <br></br>
             <h4 className="cinza">Looking for the cutest Hello Kitty gaming gear ever? You’ve found them! Capture your most precious gaming moments with a setup that's never short on adorable allies.</h4>
             <br></br>
-            <div className="imagem">
+            <div className="imagemm">
                 <img src="https://assets2.razerzone.com/images/pnx.assets/29296c4e884390faba0239b7d4d7cecd/hello-kitty-and-friends-keyboard-desktop.webp"/>
             </div>
 
-            <div>
+            <div className="lista-produtos">
             {
-                listaProdutos.map((produto)=>
-                <div key={produto.id}>
-                <h1>{produto.nome}</h1>
-                <p>{produto.preco}</p>
-                </div>)
-            }
+        produtos.map((produto)=>
+        <div key={produto.id}>
+        <img src={produto.imagem} />
+        <p>{produto.nome}</p>
+        <p>{produto.preco}</p>
+        </div>
+        )
+    }
             </div>
         </>
     );

@@ -56,3 +56,11 @@ li{
     display: flex;
     justify-content: center;
 }
+
+.lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os cartões */
+    justify-content: center;
+    padding: 20px;
+}

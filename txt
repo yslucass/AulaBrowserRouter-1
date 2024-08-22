@@ -1,0 +1,20 @@
+const [produtos] = useState([
+        {
+            id: 1,
+            nome: 'Produto a',
+            preco: 'US$100',
+            imagem: "https://assets3.razerzone.com/XianHhS4aWPIr4UJLTatssIfkZI=/300x300/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fha0%2Fhb6%2F9529652445214%2Fbasilisk-v3-pro-black-2-500x500.png"
+        }
+    ])
+
+
+    {
+        produtos.map((produto)=>
+        <div key={produto.id}>
+        <img src={produto.imagem} />
+        <h3>{produto.id}</h3>
+        <p>{produto.nome}</p>
+        <p>{produto.preco}</p>
+        </div>
+        )
+    }
