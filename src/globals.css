@@ -140,6 +140,14 @@ header li:hover {
     height: auto;
 }
 
+.categoria {
+    display: none;
+}
+
+.cor{
+    
+}
+
 footer {
     background-color: #131313;
     color: white;
@@ -197,6 +205,7 @@ footer .container a:hover {
 
     .imagemm img {
         max-width: 90%;
+        height: auto;
     }
 
     footer .container ul {

@@ -7,6 +7,8 @@ export default function ListarProdutos({ produtos }) {
                     <img src={produto.imagem} alt={produto.nome} className="imagem-produto" />
                     <p className="nome-produto">{produto.nome}</p>
                     <p className="preco-produto">{produto.preco}</p>
+                    <p className='categoria'>{produto.categoria}</p>
+                    <p className='cor'>{produto.cor}</p>
                     <button className="botao">Buy</button>
                 </div>
             ))}
