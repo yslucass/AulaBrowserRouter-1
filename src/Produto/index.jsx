@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Produto() {
     // Lista de produtos estáticos
@@ -158,6 +159,7 @@ export default function Produto() {
         </div>
     ))}
 </div>
+        <Footer/>
         </div>
     );
 }
