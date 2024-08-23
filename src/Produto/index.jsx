@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ListarProdutos from '../components/ListarProdutos';
 
 export default function Produto() {
-    // Lista de produtos estáticos
     const produtos = [
         {
             id: 6,
@@ -148,17 +148,7 @@ export default function Produto() {
                 <img src='https://assets2.razerzone.com/images/pnx.assets/5e6f5561d926b339efd717242db87776/razer-skins-usp-scratch-resistance-desktop.jpg'/>
             </div>
             
-            <div className="lista-produtos">
-    {produtos.map((produto) => (
-        <div key={produto.id} className="card-produto">
-            <img src={produto.imagem} alt={produto.nome} className="imagem-produto" />
-            <p className="nome-produto">{produto.nome}</p>
-            <p className='preco-antigo'>{produto.precoantigo}</p>
-            <p className="preco-produto">{produto.preco}</p>
-            <button className="botao">Buy</button>
-        </div>
-    ))}
-</div>
+            <ListarProdutos produtos={produtos} />
         <Footer/>
         </div>
     );

@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Footer from "../components/Footer";
+import ListarProdutos from "../components/ListarProdutos";
 
 export default function Home() {
 
@@ -72,16 +73,7 @@ export default function Home() {
                 <img src="https://assets2.razerzone.com/images/pnx.assets/29296c4e884390faba0239b7d4d7cecd/hello-kitty-and-friends-keyboard-desktop.webp"/>
             </div>
 
-            <div className="lista-produtos">
-    {produtos.map((produto) => (
-        <div key={produto.id} className="card-produto">
-            <img src={produto.imagem} alt={produto.nome} className="imagem-produto" />
-            <p className="nome-produto">{produto.nome}</p>
-            <p className="preco-produto">{produto.preco}</p>
-            <button className="botao">Buy</button>
-        </div>
-    ))}
-</div>
+            <ListarProdutos produtos={produtos} />
         <Footer/>
         </>
     );
