@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif; 
-    background-color: #121212; 
+    background-color: #000000; 
     color: #e0e0e0; 
 }
 
@@ -55,12 +55,134 @@ li{
     color: rgb(128, 128, 128);
     display: flex;
     justify-content: center;
+    padding: 15px;
 }
 
 .lista-produtos {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espaçamento entre os cartões */
+    gap: 20px; 
     justify-content: center;
     padding: 20px;
+}
+
+.card-produto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    background-color: #131313;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+}
+
+.card-produto:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+}
+
+.imagem-produto{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.nome-produto {
+    margin: 10px 0; 
+}
+
+.preco-produto {
+    color: #ffffff; 
+}
+
+.verde{
+    color: rgb(95, 255, 32);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.branco{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagemm img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.botao {
+    position: relative;
+    background-color: rgb(30, 189, 30);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.botao:hover {
+    background-color: rgb(104, 214, 104);
+}
+
+.preco-antigo {
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.imagem{
+    width: 180px;
+    height: auto;
+}
+
+footer {
+    background-color: #131313;
+    padding: 40px 20px; /* Adiciona padding ao footer */
+    color: white;
+    font-family: 'Montserrat', sans-serif; /* Usa a mesma fonte para consistência */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    gap: 20px; /* Adiciona espaço entre os itens */
+    max-width: 1200px; /* Define uma largura máxima para o container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+.container ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+    width: 22%; /* Define a largura de cada lista para 22% */
+}
+
+.container h3 {
+    margin-bottom: 15px; /* Espaço abaixo do título */
+    font-size: 18px; /* Tamanho da fonte para o título */
+    font-weight: bold; /* Deixa o título em negrito */
+}
+
+.container li {
+    margin-bottom: 10px; /* Espaço abaixo de cada item da lista */
+}
+
+.container a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s; /* Adiciona transição suave para a cor do link */
+}
+
+.container a:hover {
+    color: #0f0; /* Cor dos links quando hover */
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "../components/Header";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Footer from "../components/Footer";
 
 export default function Home() {
 
@@ -72,16 +73,16 @@ export default function Home() {
             </div>
 
             <div className="lista-produtos">
-            {
-        produtos.map((produto)=>
-        <div key={produto.id}>
-        <img src={produto.imagem} />
-        <p>{produto.nome}</p>
-        <p>{produto.preco}</p>
+    {produtos.map((produto) => (
+        <div key={produto.id} className="card-produto">
+            <img src={produto.imagem} alt={produto.nome} className="imagem-produto" />
+            <p className="nome-produto">{produto.nome}</p>
+            <p className="preco-produto">{produto.preco}</p>
+            <button className="botao">Buy</button>
         </div>
-        )
-    }
-            </div>
+    ))}
+</div>
+        <Footer/>
         </>
     );
 }
