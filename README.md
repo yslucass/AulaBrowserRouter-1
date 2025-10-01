@@ -1,8 +1,10 @@
-# React + Vite
+# 🛍️ Projeto React - Listagem de Produtos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto React simples com **React Router** que simula a navegação entre páginas e a listagem de produtos com estilização básica.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://reactjs.org)
+- [React Router DOM](https://reactrouter.com/)
+- [Vite](https://vitejs.dev/) ou Create React App (dependendo do setup)
+- CSS (estilização global e de componentes)
